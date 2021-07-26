@@ -26,6 +26,26 @@
 <!-- Body Starts -->    
 <body>
 
+<!--Top Bar with Address and social icons-->
+<div class="container-fluid info p-3" id="top-icons">
+    <div class="row">
+        
+        <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+            <div class="info-icons p-2">
+                <a href="https://web.facebook.com/Lacuisine111/" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <h2 class="primary-color p-2 text-capitalize">International Eats Restaurant <small>(226) 506-2165</small></h2>
+        </div>
+
+    </div>
+</div>    
+<!--End of Top Bar and Social Icons-->
+
+<!-------------------------------------------------------------------------------------------------------------->
+
 <!--Header Section-->
 <header id="header">
     <div class="container">
@@ -52,7 +72,7 @@
 <!--Navigation Bar-->
 
 <nav class="navbar navbar-expand-lg">
-    <a href="index.php" class="navbar-brand text-uppercase primary-color">International &nbsp; Eats</a>
+    <a href="index.php" class="navbar-brand text-uppercase primary-color">International Eats</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
         <div class="toggler-btn">
             <div class="bar bar1"></div>
@@ -80,18 +100,18 @@
         </ul>
     <form class="form-inline d-none d-lg-block mr-5">
         <ul class="navbar-nav mx-auto">
-          <li><a href="restaurant.php" class="btn nav-btn text-capitalize text-cursive">Food Items</a></li>
+          <li><a href="restaurant.php" class="btn nav-btn text-capitalize">Food Items</a></li>
             <?php
             if(empty($_SESSION["user_id"])) 
             {
               // if user is not login
-              echo '<li><a href="login.php" class="btn nav-btn text-capitalize text-cursive">login/signup</a></li>';
+              echo '<li><a href="login.php" class="btn nav-btn text-capitalize">login/signup</a></li>';
             }
             else
             {
               //if user is login
-              echo '<li"><a href="your_orders.php" class="btn nav-btn text-capitalize text-cursive">My_Orders</a></li>';
-              echo '<li"><a href="logout.php" class="btn nav-btn text-capitalize text-cursive">logout</a></li>';
+              echo '<li"><a href="your_orders.php" class="btn nav-btn text-capitalize">My_Orders</a></li>';
+              echo '<li"><a href="logout.php" class="btn nav-btn text-capitalize">logout</a></li>';
             }
             ?>            
         </ul>
@@ -318,7 +338,7 @@
     <div class="row">
         <div class="col-md-6 my-4">
             <center><h1 class="text-uppercase primary-color">About Us</h1></center>
-            <h2 class="text-about">International Eats Restaurant is the name of quality and taste, which provides its services for more than 20 years in the city, always co-operating with customers, improving its services, maintaining the high quality with low rates and standard food to the customers</h2>
+            <h2 class="text-head">International Eats Restaurant is the name of quality and taste, which provides its services for more than 20 years in the city, always co-operating with customers, improving its services, maintaining the high quality with low rates and standard food to the customers</h2>
             <center><a href="" class="btn main-btn my-4 text-capitalize">Learn More</a></center>
         </div>
         <div class="col-md-6 about-pictures my-4 d-none d-lg-block">
@@ -568,8 +588,15 @@ if(!empty($_POST["submit"]))      //if records were not empty
 <!--Footer social icons-->
 
 <div class="container-fluid info p-3">
-    <div class="row">     
+    <div class="row">
+        
         <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+            <div class="info-icons p-2">
+                <a href="https://web.facebook.com/Lacuisine111/" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
             <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020  International Eats Restaurant</h2>
         </div>
     </div>
