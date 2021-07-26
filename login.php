@@ -165,24 +165,17 @@ if(isset($_POST['submit']))   			//if button is submit
 
 <!------------------------------------------------------------------------------------------------------------->
 
-<!--Footer social icons-->
+<!--Footer-->
 
 <div class="container-fluid info p-3">
-    <div class="row">
-        
+    <div class="row">       
         <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
-            <div class="info-icons p-2">
-                <a href="https://web.facebook.com/Lacuisine111/" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
-            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 | UETP</h2>
+            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 International Eats Restaurant</h2>
         </div>
     </div>
 </div>    
 
-<!--End of Footer Social Icons-->
+<!--End of Footer-->
 
 <!------------------------------------------------------------------------------------------------------------->
 

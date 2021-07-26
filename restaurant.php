@@ -109,11 +109,11 @@ session_start();
                             {
                                 echo'<div class="col-sm-12 col-md-12 col-lg-8 text-xs-center text-sm-left">
                                         <div class="entry-logo">
-                                        <a class="img-fluid" href="dishes.php?res_id='.$rows['RS_ID'].'" > <img src="admin/Res_img/'.$rows['image'].'" alt="Food logo"></a>
+                                        <a class="img-fluid" href="dishes.php?RS_ID='.$rows['RS_ID'].'" > <img src="admin/Res_img/'.$rows['image'].'" alt="Food logo"></a>
                                         </div>
 
                                         <div class="entry-dscr">
-                                        <h5><a href="dishes.php?res_id='.$rows['RS_ID'].'" >'.$rows['title'].'</a></h5> <span>'.$rows['address'].' <a href="#">...</a></span>
+                                        <h5><a href="dishes.php?RS_ID='.$rows['RS_ID'].'" >'.$rows['title'].'</a></h5> <span>'.$rows['address'].' <a href="#">...</a></span>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item"><i class="fa fa-check"></i> Min 400-pkr</li>
                                                 <li class="list-inline-item"><i class="fa fa-motorcycle"></i> 30 min</li>
@@ -141,24 +141,17 @@ session_start();
 
 <!------------------------------------------------------------------------------------------------------------->
 
-<!--Footer social icons-->
+<!--Footer-->
 
 <div class="container-fluid info p-3">
     <div class="row">
-        
         <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
-            <div class="info-icons p-2">
-                <a href="https://web.facebook.com/Lacuisine111/" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
-            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020  International Eats Restaurant</h2>
+            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 International Eats Restaurant</h2>
         </div>
     </div>
 </div>    
 
-<!--End of Footer Social Icons-->
+<!--End of Footer-->
 
 <!------------------------------------------------------------------------------------------------------------->
 

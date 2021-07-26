@@ -1,70 +1,77 @@
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Top bar!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+
 /*pinkish white #c9c1ac*/
+
+
 /*light shocking pink #d3325f*/
 
-.info{
+.info {
     background: #c9c1ac;
 }
 
-body{
+body {
     font-family: 'Mr Dafoe', cursive;
     color: azure;
     background: url(../img/eat.jpg)center/cover fixed no-repeat;
 }
 
-.primary-color{
+.primary-color {
     color: #d3325f;
 }
 
-.info h2{
+.info h2 {
     word-spacing: 0.6rem;
 }
 
+
 /*Icons Color*/
 
-.fa-facebook{
+.fa-facebook {
     color: #3b5998;
     transition: color 1s ease-in-out;
 }
 
-.fa-facebook:hover{
+.fa-facebook:hover {
     color: green;
 }
 
-.fa-youtube{
+.fa-youtube {
     color: crimson;
     transition: color 1s ease-in-out;
 }
 
-.fa-youtube:hover{
+.fa-youtube:hover {
     color: green;
 }
 
-.fa-twitter{
+.fa-twitter {
     color: deepskyblue;
     transition: color 1s ease-in-out;
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
     color: green;
 }
 
-.fa-instagram{
+.fa-instagram {
     color: crimson;
     transition: color 1s ease-in-out;
 }
 
-.fa-instagram:hover{
+.fa-instagram:hover {
     color: green;
 }
+
+
 /*Icons Color End*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Header Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-#header{
+#header {
     min-height: calc(100vh - 94px);
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/1.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -72,13 +79,14 @@ body{
     position: relative;
 }
 
-.height-90{
-    min-height: calc(100vh - 94px);    
+.height-90 {
+    min-height: calc(100vh - 94px);
 }
+
 
 /*!!!!!!!!!!!!!Lacuisine Retaurant Animation!!!!!!!!!!!!!!*/
 
-.banner h1{
+.banner h1 {
     border-top: 8px dotted pink;
     border-bottom: 8px dotted pink;
     animation: fromleft;
@@ -88,26 +96,27 @@ body{
     animation-fill-mode: forwards;
 }
 
-@keyframes fromleft{
-    0%{
+@keyframes fromleft {
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
-    50%{
+    50% {
         transform: translateX(30px);
     }
-    100%{
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
 
+
 /*!!!!!!!!!!!!!End of Lacuisine Retaurant Animation!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!!!Order Now Button!!!!!!!!!!!!!!*/
 
-
-.main-btn{
+.main-btn {
     color: coral;
     font-size: 2rem;
     border: 3px solid coral;
@@ -115,39 +124,41 @@ body{
     transition: all 1s ease-in-out;
 }
 
-.main-btn:hover{
+.main-btn:hover {
     color: darkred;
     border: 3px solid pink;
     background: pink;
 }
 
-.la-btn{
+.la-btn {
     animation: fromright;
     animation-duration: 3s;
     animation-delay: 1s;
     opacity: 0;
-    animation-fill-mode: forwards;    
+    animation-fill-mode: forwards;
 }
 
-@keyframes fromright{
-    0%{
+@keyframes fromright {
+    0% {
         transform: translateX(100px);
         opacity: 0;
     }
-    50%{
+    50% {
         transform: translateX(-30px);
     }
-    100%{
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
 
+
 /*!!!!!!!!!!!End of Order Now Button!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!Down Button!!!!!!!!!!!!!!*/
 
-.header-link{
+.header-link {
     display: inline-block;
     position: absolute;
     bottom: 5%;
@@ -160,60 +171,64 @@ body{
     animation-iteration-count: infinite;
 }
 
-.header-link:hover{
+.header-link:hover {
     color: black;
     background: pink;
 }
 
-@keyframes frombottom{
-    0%{
+@keyframes frombottom {
+    0% {
         transform: translateY(-10px);
     }
-    50%{
+    50% {
         transform: translateY(10px);
     }
-    100%{
+    100% {
         transform: translateY(-10px);
     }
 }
 
+
 /*!!!!!!!!!!!End of Down Button!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!End of Header Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+
 /*!!!!!!!!!Navbar!!!!!!!!!!*/
 
-.navbar{
+.navbar {
     background: #c9c1ac;
     padding: 20px 20px;
     transition: all 1s ease;
 }
 
-.navbar-background{
+.navbar-background {
     padding: 5px 20px;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 30px;
     transition: all 1s ease;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
     color: darkblue;
 }
 
-.nav-link{
-    color: #d3325f;
+.nav-link {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkcyan;
     text-decoration: none;
     transition: all 2s ease;
     font-size: 23px;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: darkblue;
 }
 
-.nav-btn{
+.nav-btn {
     background: transparent;
     color: #d3325f;
     border: 3px solid #d3325f;
@@ -222,77 +237,81 @@ body{
     transition: all 1s ease;
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
     background: lightgreen;
     color: darkred;
     border: 3px solid white;
-    transform: rotate(10deg) scale(1.2);      
+    transform: rotate(10deg) scale(1.2);
 }
 
-.toggler-btn{
+.toggler-btn {
     border: 3px solid #d3325f;
     padding: 5px;
     transition: all 1s ease;
 }
 
-.bar{
+.bar {
     width: 30px;
     height: 3px;
     margin: 5px;
-    background: #d3325f; 
-    transition: all 0.5s ease;   
+    background: #d3325f;
+    transition: all 0.5s ease;
 }
 
-.change .bar1{
-    transform: rotate(-45deg) translate(-5px,6px); 
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.change .bar2{
+.change .bar2 {
     opacity: 0;
 }
 
-.change .bar3{
-    transform: rotate(45deg) translate(-5px,-8px); 
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -8px);
 }
+
 
 /*!!!!!!!End of Navbar!!!!!!!green
 
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Start Menu Items!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+
 /*!!!!!!!!!!!Menu Item Image!!!!!!!!!!!!!!*/
 
-.item-container{
+.item-container {
     position: relative;
-/*For The Link*/
+    /*For The Link*/
     overflow: hidden;
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
     transition: all 2s ease;
 }
 
-.item-img{
+.item-img {
     transition: all 2s ease;
 }
 
-.item-container:hover .item-img{
+.item-container:hover .item-img {
     transform: scale(1.2);
     opacity: 0.5;
 }
 
-.item-container:hover{
+.item-container:hover {
     outline: 7px solid #d3325f;
     outline-offset: 0.6rem;
 }
 
+
 /*!!!!!!!!!!!End of Menu Item Image!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!Link of Menu Item Image!!!!!!!!!!!!!*/
 
-.item-link{
+.item-link {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     color: coral;
     font-size: 2rem;
     border-top: 3px solid coral;
@@ -302,11 +321,11 @@ body{
     opacity: 0;
 }
 
-.item-container:hover .item-link{
+.item-container:hover .item-link {
     opacity: 1;
 }
 
-.item-link:hover{
+.item-link:hover {
     color: darkred;
     border: 3px solid pink;
     border-radius: 20px;
@@ -315,23 +334,24 @@ body{
 }
 
 
-
 /*!!!!!!!!!!!End of Link of Menu Item Image!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!End of Menu Items!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!Start of Menu Products!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-#menu{
-    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(../img/wheat.jpg)center/cover fixed no-repeat;
+#menu {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/wheat.jpg)center/cover fixed no-repeat;
 }
 
-.special{
+.special {
     border: 3px solid #d3325f;
     position: relative;
 }
 
-.special-text{
+.special-text {
     position: absolute;
     top: 0;
     right: 10%;
@@ -339,15 +359,23 @@ body{
     padding: 0 0.4rem;
 }
 
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!End of Menu Products!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!Start of About Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.about-pictures{
+.text-about {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16pt;
+    color: white;
+}
+
+.about-pictures {
     position: relative;
 }
 
-.about-image{
+.about-image {
     margin-top: 70px;
     margin-left: 40px;
     position: absolute;
@@ -356,33 +384,33 @@ body{
     opacity: 0.9;
 }
 
-.img-1{
+.img-1 {
     left: 0%;
     top: 0%;
 }
 
-.img-2{
+.img-2 {
     left: 25%;
     top: 20%;
     z-index: 10;
 }
 
-.img-3{
+.img-3 {
     left: 50%;
     top: 40%;
 }
 
-.img-4{
+.img-4 {
     left: 50%;
     top: 0%;
 }
 
-.img-5{
+.img-5 {
     left: 0%;
     top: 40%;
 }
 
-.about-image:hover{
+.about-image:hover {
     outline: 5px solid #d3325f;
     outline-offset: 0.2rem;
     transform: scale(2) rotate(20deg);
@@ -390,85 +418,92 @@ body{
     opacity: 1;
 }
 
-.about-pictures:hover .about-image:not(:hover){
+.about-pictures:hover .about-image:not(:hover) {
     opacity: 0.5;
 }
 
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!End of About Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Review Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.review-img{
+.review-img {
     width: 200px;
     height: 200px;
 }
 
-.testimonial-color{
+.testimonial-color {
     color: darkcyan;
 }
 
-.review-item{
-    background: rgba(255,255,255,0.7);
-    clip-path: polygon(5% 0,100% 0,90% 100%,0 100%);
+.review-item {
+    background: rgba(255, 255, 255, 0.7);
+    clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
 }
 
-.text-new{
-    font-size: 18pt;
+.text-new {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16pt;
     color: #d3325f;
 }
 
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!End of Review Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Team Member Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.head-text{
+.head-text {
     font-family: cursive;
-    font-size: 22pt;
+    font-size: 24pt;
     color: darkcyan;
 }
 
-.new-text{
+.new-text {
     font-family: monospace;
     font-style: oblique;
     font-size: 15pt;
 }
 
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!End of Team Member Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Contact Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-.height{
+.height {
     min-height: 71.5vh;
 }
 
-#contact .card{
+#contact .card {
     background: rgba(0, 0, 0, 0.4);
     transition: all 2s ease;
 }
 
-#contact .card:hover{
+#contact .card:hover {
     background: rgba(0, 0, 0, 0.9);
 }
 
-#contact .card-header{
+#contact .card-header {
     color: #d3325f;
 }
 
-#contact .input-group-text{
+#contact .input-group-text {
     background: #d3325f;
     border-color: #d3325f;
     color: #242424;
 }
 
-#contact .card-input{
+#contact .card-input {
     color: #606060;
 }
 
-#contact .card-input::placeholder{
+#contact .card-input::placeholder {
     color: #606060;
 }
 
-.contact-btn{
+.contact-btn {
     color: coral;
     border-color: coral;
     border: 3px solid coral;
@@ -477,7 +512,7 @@ body{
     transition: all 2s ease-in-out;
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
     background: pink;
     color: darkred;
     border: 3px solid pink;
@@ -485,20 +520,23 @@ body{
     border-color: pink;
 }
 
+
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!End of Contact Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!footer Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
-#back-to-top{
+#back-to-top {
     background: white;
     border-radius: 15px;
     display: inline-block;
 }
 
-.scrollTop{
+.scrollTop {
     position: fixed;
     bottom: 70px;
     right: 10px;
 }
+
 
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!footer Section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
