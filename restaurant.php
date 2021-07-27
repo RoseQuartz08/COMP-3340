@@ -115,7 +115,7 @@ session_start();
                                         <div class="entry-dscr">
                                         <h5><a href="dishes.php?RS_ID='.$rows['RS_ID'].'" >'.$rows['title'].'</a></h5> <span>'.$rows['address'].' <a href="#">...</a></span>
                                             <ul class="list-inline">
-                                                <li class="list-inline-item"><i class="fa fa-check"></i> Min 400-can</li>
+                                                <li class="list-inline-item"><i class="fa fa-check"></i> Min 1 CAN</li>
                                                 <li class="list-inline-item"><i class="fa fa-motorcycle"></i> 30 min</li>
                                             </ul>
                                         </div>

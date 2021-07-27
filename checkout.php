@@ -20,7 +20,7 @@ else
         	$SQL="insert into users_orders(CNIC,FName,quantity,price) values('".$_SESSION["user_id"]."','".$item["FName"]."','".$item["quantity"]."','".$item["price"]."')";
 		mysqli_query($db,$SQL);
 		
-        $success = "Thankyou! Your Order Placed successfully!";
+        $success = "Thank you! Your Order Placed successfully!";
 	}
 }
 ?>
