@@ -43,7 +43,7 @@ if(isset($_POST['submit']))   			//if button is submit
 			{
         $_SESSION["user_id"] = $row['CNIC']; //put user id into temp session
         $_SESSION['success'] = "You are now logged in";
-        header("location: index.php"); // redirect to index.php page
+        header("location: login.php"); // redirect to index.php page
 	    } 
 		  else
       {
@@ -71,7 +71,7 @@ if(isset($_POST['submit']))   			//if button is submit
             <?php
             if(!empty($_SESSION["user_id"])) 
             {
-              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My Orders</a></li>';
+              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My_Orders</a></li>';
             }
             ?>            
         </ul>
@@ -165,17 +165,24 @@ if(isset($_POST['submit']))   			//if button is submit
 
 <!------------------------------------------------------------------------------------------------------------->
 
-<!--Footer-->
+<!--Footer social icons-->
 
 <div class="container-fluid info p-3">
-    <div class="row">       
+    <div class="row">
+        
         <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
-            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 International Eats Restaurant</h2>
+            <div class="info-icons p-2">
+                <a href="https://web.facebook.com/Lacuisine111/" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 | UETP</h2>
         </div>
     </div>
 </div>    
 
-<!--End of Footer-->
+<!--End of Footer Social Icons-->
 
 <!------------------------------------------------------------------------------------------------------------->
 

@@ -160,10 +160,9 @@ only screen and (max-width: 760px),
 
 <body>
 
-<!--Navigation Bar-->
 
 <nav class="navbar navbar-expand-lg">
-    <a href="index.php" class="navbar-brand text-uppercase primary-color">International Eats</a>
+    <a href="index.php" class="navbar-brand text-uppercase primary-color">La Cuisine</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
         <div class="toggler-btn">
             <div class="bar bar1"></div>
@@ -172,7 +171,13 @@ only screen and (max-width: 760px),
         </div>
     </button> 
     <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="navbar-nav mx-auto head-text">       
+        <ul class="navbar-nav mx-auto head-text">
+            <?php
+            if(!empty($_SESSION["user_id"])) 
+            {
+              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My_Orders</a></li>';
+            }
+            ?>            
         </ul>
     <form class="form-inline d-none d-lg-block mr-5">
         <ul class="navbar-nav mx-auto">
@@ -302,7 +307,6 @@ while($row=mysqli_fetch_array($query_res))
         </div>
     </div>
 </section>
-
 
     <script src="js/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
