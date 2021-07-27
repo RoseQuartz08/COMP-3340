@@ -55,7 +55,7 @@ else
 <!--Navigation Bar-->
 
 <nav class="navbar navbar-expand-lg">
-    <a href="index.php" class="navbar-brand text-uppercase primary-color">La Cuisine</a>
+    <a href="index.php" class="navbar-brand text-uppercase primary-color">International Eats</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
         <div class="toggler-btn">
             <div class="bar bar1"></div>
@@ -68,7 +68,7 @@ else
             <?php
             if(!empty($_SESSION["user_id"])) 
             {
-              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My_Orders</a></li>';
+              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My Orders</a></li>';
             }
             ?>            
         </ul>
@@ -140,7 +140,7 @@ else
                                                     </tr>
                                                     <tr>
                                                         <td class="text-color"><strong>Total</strong></td>
-                                                        <td class="text-color"><strong> <?php echo $item_total ." PKR"; ?></strong></td>
+                                                        <td class="text-color"><strong> <?php echo $item_total ." CAN"; ?></strong></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -167,24 +167,17 @@ else
 </section>
 <!------------------------------------------------------------------------------------------------------------->
 
-<!--Footer social icons-->
+<!--Footer-->
 
 <div class="container-fluid info p-3">
     <div class="row">
-        
         <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
-            <div class="info-icons p-2">
-                <a href="https://web.facebook.com/Lacuisine111/" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
-            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 | UETP</h2>
+            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 International Eats Restaurant</h2>
         </div>
     </div>
 </div>    
 
-<!--End of Footer Social Icons-->
+<!--End of Footer-->
 
 <!------------------------------------------------------------------------------------------------------------->
 

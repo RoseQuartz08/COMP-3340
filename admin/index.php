@@ -63,7 +63,9 @@ if(isset($_POST['submit1'] ))
      {
     	$message = 'Email Already exists!';
      }
-    }
+	 
+	}
+
 }
 ?>
 

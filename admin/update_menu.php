@@ -58,7 +58,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 												
 												
 				                                 
-												$sql = "update dishes set RS_ID='$_POST[res_name]',FName='$_POST[d_name]',Description='$_POST[about]',price='$_POST[price]',img='$fnew' where D_ID='$_GET[menu_upd]'";  // update the submited data ino the database :images
+												$sql = "update dishes set RS_ID=$_POST[res_name],FName='$_POST[d_name]',Description='$_POST[about]',price='$_POST[price]',img='$fnew' where D_ID='$_GET[menu_upd]'";  // update the submited data ino the database :images
 												mysqli_query($db, $sql); 
 												move_uploaded_file($temp, $store);
 			  
@@ -127,12 +127,10 @@ if(isset($_POST['submit']))           //if upload btn is pressed
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <!-- Logo -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="dashboard.php">
                         <!-- Logo icon -->
                         <b><img src="images/logo.png" alt="homepage" class="dark-logo" /></b>
                         <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span><img src="images/logo-text.png" alt="homepage" class="dark-logo" /></span>
                     </a>
                 </div>
                 <!-- End Logo -->
@@ -311,11 +309,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                             <a class="nav-link dropdown-toggle text-muted  " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/users/5.jpg" alt="user" class="profile-pic" /></a>
                             <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                 <ul class="dropdown-user">
-                                    <li><a href="#"><i class="ti-user"></i> Profile</a></li>
-                                    <li><a href="#"><i class="ti-wallet"></i> Balance</a></li>
-                                    <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
-                                    <li><a href="#"><i class="ti-settings"></i> Setting</a></li>
-                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                    <li><a href="logout.php"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -437,7 +431,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">price </label>
-                                                    <input type="text" name="price" value="<?php echo $roww['price'];?>"  class="form-control" placeholder="PKR">
+                                                    <input type="text" name="price" value="<?php echo $roww['price'];?>"  class="form-control" placeholder="CAN">
                                                    </div>
                                             </div>
                                             <!--/span-->
@@ -461,14 +455,14 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 											
 											 <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label class="control-label">Select Category</label>
+                                                    <label class="control-label">Select Restaurant</label>
 													<select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
                                                         <option>--Select Restaurant--</option>
                                                  <?php $ssql ="select * from restaurant";
 													$res=mysqli_query($db, $ssql); 
 													while($row=mysqli_fetch_array($res))  
 													{
-                                                       echo' <option value="'.$row['RS_ID'].'">'.$row['FName'].'</option>';;
+                                                       echo' <option value="'.$row['RS_ID'].'">'.$row['title'].'</option>';;
 													}  
                                                  
 													?> 

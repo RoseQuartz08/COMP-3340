@@ -38,7 +38,7 @@ include_once 'product-action.php'; //including controller
 <!--Navigation Bar-->
 
 <nav class="navbar navbar-expand-lg">
-    <a href="index.php" class="navbar-brand text-uppercase primary-color">La Cuisine</a>
+    <a href="index.php" class="navbar-brand text-uppercase primary-color">International Eats</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
         <div class="toggler-btn">
             <div class="bar bar1"></div>
@@ -51,7 +51,7 @@ include_once 'product-action.php'; //including controller
             <?php
             if(!empty($_SESSION["user_id"])) 
             {
-              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My_Orders</a></li>';
+              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My Orders</a></li>';
             }
             ?>            
         </ul>
@@ -112,7 +112,7 @@ include_once 'product-action.php'; //including controller
                         <h6><a href="#"><?php echo $rows['FName']; ?></a></h6>
                         <p><?php echo $rows['address']; ?></p>
                         <ul class="nav nav-inline">
-                            <li class="nav-item"> <a class="nav-link active" href="#"><i class="fa fa-check"></i> Min 500-pkr</a> </li>
+                            <li class="nav-item"> <a class="nav-link active" href="#"><i class="fa fa-check"></i> Min 500-can</a> </li>
                             <li class="nav-item"> <a class="nav-link" href="#"><i class="fa fa-motorcycle"></i> 30 min</a> </li>
                             <li class="nav-item ratings">
                                 <a class="nav-link" href="#"> <span>
@@ -158,7 +158,7 @@ include_once 'product-action.php'; //including controller
 										
                             <div class="form-group row no-gutter">
                                 <div class="col-xs-8">
-                                    <input type="text" class="form-control b-r-0" value=<?php echo "PKR".$item["price"]; ?> readonly id="exampleSelect1">
+                                    <input type="text" class="form-control b-r-0" value=<?php echo "CAN".$item["price"]; ?> readonly id="exampleSelect1">
                                 </div>
                                 <div class="col-xs-4">
                                     <input class="form-control" type="text" readonly value='<?php echo $item["quantity"]; ?>' id="example-number-input"> </div>
@@ -180,7 +180,7 @@ include_once 'product-action.php'; //including controller
                                 <div class="widget-body">
                                     <div class="price-wrap text-xs-center">
                                         <p>TOTAL</p>
-                                        <h3 class="value"><strong><?php echo "PKR-".$item_total; ?></strong></h3>
+                                        <h3 class="value"><strong><?php echo "CAN-".$item_total; ?></strong></h3>
                                         <p>Including Delivery charges</p>
                                         <a href="checkout.php?res_id=<?php echo $_GET['RS_ID'];?>&action=check"  class="btn theme-btn btn-lg">Checkout</a>
                                     </div>
@@ -255,22 +255,15 @@ include_once 'product-action.php'; //including controller
 </section>
 <!------------------------------------------------------------------------------------------------------------->
 
-<!--Footer social icons-->
+<!--Footer-->
 <div class="container-fluid info p-3">
-    <div class="row">
-        
+    <div class="row">   
         <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
-            <div class="info-icons p-2">
-                <a href="https://web.facebook.com/Lacuisine111/" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-youtube fa-2x"></i></a>
-                <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
-            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 | UETP</h2>
+            <h2 class="primary-color p-2 text-capitalize">&copy;Copyright 2020 International Eats Restaurant</h2>
         </div>
     </div>
 </div>    
-<!--End of Footer Social Icons-->
+<!--End of Footer-->
 
 <!------------------------------------------------------------------------------------------------------------->
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
