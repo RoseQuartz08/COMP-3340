@@ -63,27 +63,7 @@ if(isset($_POST['submit1'] ))
      {
     	$message = 'Email Already exists!';
      }
-	 if(mysqli_num_rows($check_code) > 0)           // if code already exist 
-             {
-                   $message = "Unique Code Already Redeem!";
-             }
-	else{
-       $result = mysqli_query($db,"SELECT id FROM admin_codes WHERE codes =  '".$_POST['code']."'");  //query to select the id of the valid code enter by user! 
-					  
-                     if(mysqli_num_rows($result) == 0)     //if code is not valid
-						 {
-                            // row not found, do stuff...
-			                 $message = "invalid code!";
-                         } 
-                      
-                      else                                 //if code is valid 
-					     {
-	
-								$mql = "INSERT INTO admin (username,password,email,code) VALUES ('".$_POST['cr_user']."','".md5($_POST['cr_pass'])."','".$_POST['cr_email']."','".$_POST['code']."')";
-								mysqli_query($db, $mql);
-									$success = "Admin Added successfully!";
-						 }
-        }
+	 
 	}
 
 }
@@ -115,23 +95,12 @@ if(isset($_POST['submit1'] ))
 <div class="form">
   <div class="thumbnail"><img src="images/manager.png"/></div>
   
-  <form class="register-form" action="index.php" method="post">
-    <input type="text" placeholder="username" name="cr_user"/>
-    <input type="text" placeholder="email address"  name="cr_email"/>
-	 <input type="password" placeholder="password"  name="cr_pass"/>
-	  <input type="password" placeholder="Confirm password"  name="cr_cpass"/>
-	  <input type="password" placeholder="Unique-Code"  name="code"/>
-   <input type="submit"  name="submit1" value="Create" />
-    <p class="message">Already registered? <a href="#">Sign In</a></p>
-  </form>
-  
   <span style="color:red;"><?php echo $message; ?></span>
    <span style="color:green;"><?php echo $success; ?></span>
   <form class="login-form" action="index.php" method="post">
     <input type="text" placeholder="username" name="username"/>
     <input type="password" placeholder="password" name="password"/>
     <input type="submit"  name="submit" value="login" />
-    <p class="message">Not registered? <a href="#">Create an account</a></p>
   </form>
   
 </div>
