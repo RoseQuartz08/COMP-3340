@@ -55,7 +55,7 @@ else
 <!--Navigation Bar-->
 
 <nav class="navbar navbar-expand-lg">
-    <a href="index.php" class="navbar-brand text-uppercase primary-color">La Cuisine</a>
+    <a href="index.php" class="navbar-brand text-uppercase primary-color">International Eats</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
         <div class="toggler-btn">
             <div class="bar bar1"></div>

@@ -43,7 +43,7 @@ if(isset($_POST['submit']))   			//if button is submit
 			{
         $_SESSION["user_id"] = $row['CNIC']; //put user id into temp session
         $_SESSION['success'] = "You are now logged in";
-        header("location: login.php"); // redirect to index.php page
+        header("location: index.php"); // redirect to index.php page
 	    } 
 		  else
       {

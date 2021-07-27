@@ -82,16 +82,18 @@
         <ul class="navbar-nav mx-auto">
           <li><a href="restaurant.php" class="btn nav-btn text-capitalize text-cursive">Food Items</a></li>
             <?php
-            if(empty($_SESSION["user_id"])) 
-            {
-              // if user is not login
-              echo '<li><a href="login.php" class="btn nav-btn text-capitalize text-cursive">login/signup</a></li>';
-            }
-            else
+            session_start(); 	
+
+            if(!empty($_SESSION["user_id"])) 
             {
               //if user is login
               echo '<li"><a href="your_orders.php" class="btn nav-btn text-capitalize text-cursive">My Orders</a></li>';
               echo '<li"><a href="logout.php" class="btn nav-btn text-capitalize text-cursive">logout</a></li>';
+            }
+            else
+            {
+              // if user is not login
+              echo '<li><a href="login.php" class="btn nav-btn text-capitalize text-cursive">login/signup</a></li>';
             }
             ?>            
         </ul>
