@@ -15,6 +15,7 @@ if(isset($_POST['submit'] ))
 		empty($_POST['lname']) ||  
 		empty($_POST['email'])||
 		empty($_POST['password'])||
+        empty($_POST['address'])||
 		empty($_POST['phone']))
 		{
 			$error = '<div class="alert alert-danger alert-dismissible fade show">
@@ -54,7 +55,7 @@ if(isset($_POST['submit'] ))
 	else{
        
 	
-	$mql = "update users set CNIC ='$_POST[cnic]',username='$_POST[uname]', f_name='$_POST[fname]', l_name='$_POST[lname]',email='$_POST[email]',phone='$_POST[phone]',password='".md5($_POST[password])."' where CNIC='$_GET[user_upd]' ";
+	$mql = "update users set CNIC ='$_POST[cnic]',username='$_POST[uname]', f_name='$_POST[fname]', l_name='$_POST[lname]',email='$_POST[email]',phone='$_POST[phone]',address='$_POST[address]',password='".md5($_POST['password'])."' where CNIC='$_GET[user_upd]' ";
 	mysqli_query($db, $mql);
 			$success = 	'<div class="alert alert-success alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -235,9 +236,7 @@ if(isset($_POST['submit'] ))
 									<?php  
 									        echo $error;
 									        echo $success; 
-											
-											echo var_dump($_POST);
-											
+										
 											?>
 									
 									
@@ -314,6 +313,16 @@ if(isset($_POST['submit'] ))
                                             </div>
                                             <!--/span-->
                                             
+                                            <h3 class="box-title m-t-40"> Address</h3>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-12 ">
+                                                <div class="form-group">
+                                                    
+                                                    <textarea name="address" type="text" style="height:100px;" class="form-control" placeholder="address"><?php  echo $newrow['address'];  ?></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
                                       
                                             <!--/span-->
                                         </div>

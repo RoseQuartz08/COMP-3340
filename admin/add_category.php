@@ -30,9 +30,10 @@ if(isset($_POST['submit'] ))
 															</div>';
      }
 	else{
-       
+    
+    $check_cat= mysqli_query($db, "SELECT * FROM category");
 	
-	$mql = "INSERT INTO category(c_name) VALUES('".$_POST['c_name']."')";
+	$mql = "INSERT INTO category(c_id, c_name, date) VALUES(".(mysqli_num_rows($check_cat)+1).", '".$_POST['c_name']."', now())";
 	mysqli_query($db, $mql);
 			$success = 	'<div class="alert alert-success alert-dismissible fade show">
 																<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>

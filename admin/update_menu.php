@@ -58,7 +58,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 												
 												
 				                                 
-												$sql = "update dishes set RS_ID='$_POST[res_name]',FName='$_POST[d_name]',Description='$_POST[about]',price='$_POST[price]',img='$fnew' where D_ID='$_GET[menu_upd]'";  // update the submited data ino the database :images
+												$sql = "update dishes set RS_ID=$_POST[res_name],FName='$_POST[d_name]',Description='$_POST[about]',price='$_POST[price]',img='$fnew' where D_ID='$_GET[menu_upd]'";  // update the submited data ino the database :images
 												mysqli_query($db, $sql); 
 												move_uploaded_file($temp, $store);
 			  
@@ -455,14 +455,14 @@ if(isset($_POST['submit']))           //if upload btn is pressed
 											
 											 <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <label class="control-label">Select Category</label>
+                                                    <label class="control-label">Select Restaurant</label>
 													<select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
                                                         <option>--Select Restaurant--</option>
                                                  <?php $ssql ="select * from restaurant";
 													$res=mysqli_query($db, $ssql); 
 													while($row=mysqli_fetch_array($res))  
 													{
-                                                       echo' <option value="'.$row['RS_ID'].'">'.$row['FName'].'</option>';;
+                                                       echo' <option value="'.$row['RS_ID'].'">'.$row['title'].'</option>';;
 													}  
                                                  
 													?> 
