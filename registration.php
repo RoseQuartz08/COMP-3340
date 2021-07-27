@@ -125,7 +125,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
             else
             {
               //if user is login
-              echo '<li class="nav-item"><a href="your_orders.php" class="nav-link text-capitalize">My_Orders</a></li>';
+              echo '<li class="nav-item"><a href="your_orders.php" class="nav-link text-capitalize">My Orders</a></li>';
               echo '<li class="nav-item"><a href="logout.php" class="btn nav-btn text-capitalize">logout</a></li>';
             }
             ?>            

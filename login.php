@@ -71,7 +71,7 @@ if(isset($_POST['submit']))   			//if button is submit
             <?php
             if(!empty($_SESSION["user_id"])) 
             {
-              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My_Orders</a></li>';
+              echo '<li><a href="your_orders.php" class="btn nav-btn text-capitalize">My Orders</a></li>';
             }
             ?>            
         </ul>
