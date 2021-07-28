@@ -82,7 +82,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
 
 <head>
   <meta charset="UTF-8">
-  <title>Registration lacuisine</title>
+  <title>Registration International Eats</title>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
@@ -106,7 +106,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
 <!--Navigation Bar-->
 
 <nav class="navbar navbar-expand-lg">
-    <a href="index.php" class="navbar-brand text-uppercase primary-color">La Cuisine</a>
+    <a href="index.php" class="navbar-brand text-uppercase primary-color">International Eats</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
         <div class="toggler-btn">
             <div class="bar bar1"></div>
