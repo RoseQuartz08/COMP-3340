@@ -302,7 +302,7 @@ if(isset($_POST['submit']))           //if upload btn is pressed
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="control-label">price </label>
-                                                    <input type="text" name="price" class="form-control" placeholder="PKR ">
+                                                    <input type="text" name="price" class="form-control" placeholder="CAN ">
                                                    </div>
                                             </div>
                                             <!--/span-->
