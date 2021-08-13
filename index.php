@@ -3,10 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home for International Eats website which shows reveiws, dishes, and information. Leads to login, cart, and restaurant pages.">
+    <meta name="keywords" content="Home,International,Eats,Food,Restaurant,Store">
+  
 	<title>International Eats Restaurant COMP3340 Project Team 25</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
- <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+ 	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
